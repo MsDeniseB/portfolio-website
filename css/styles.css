@@ -24,13 +24,16 @@ html,body{
       line-height: 1.6;
     }
 
-
+table{
+text-align: center;
+scroll-margin-block: center;
+}
 
 body{
   text-align: center;
 }
 
-.container, table {
+.container {
   display: grid;
   grid-template-rows: 15% 65% 20%;
   grid-gap: 5px;
