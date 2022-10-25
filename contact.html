@@ -33,18 +33,59 @@
      </ul>
    </nav>
 </header>
+
+
 <body>
     <main>
       <div>
         <h1>Contact Me</h1>
-            <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="black" />
-              <circle cx="150" cy="100" r="90" fill="blue" />
-            </svg>
-      </div>
-    </main>
 
-    <form action="/login-form-action" method="post">
+        <div id="container"></div>
+        <script id="template">
+          <div class="contact-wrapper">
+              <div class="envelope {{ flipCard ?  'active' : '' }}">
+                <div class="back paper"></div>
+                <div class="content">
+                  <div class="form-wrapper">
+                    <form>
+                      <div class="top-wrapper">
+                        <div class="input">
+                          <label>Name</label>
+                          <input type="text" name="name"/>
+                        </div>
+                        <div class="input">
+                          <label>Phone</label>
+                          <input type="text" name="phone"/>
+                        </div>
+                        <div class="input">
+                          <label>Email</label>
+                          <input type="text" name="_replyto"/>
+                        </div>
+                      </div>
+                      <div class="bottom-wrapper">
+                        <div class="input">
+                          <label>Subject</label>
+                          <input type="text" name="_subject"/>
+                        </div>
+                        <div class="input">
+                          <label>Message</label>
+                          <textarea rows="5" name="message"></textarea>
+                        </div>
+                        <div class="submit">
+                          <div class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="front paper"></div>
+              </div>
+            </div>
+          
+        </script>
+
+
+    <!--    <form action="/login-form-action" method="post">
       <label for="firstname">First Name:</label>
       <input type="text" id="firstname" name="first name">
 
@@ -75,11 +116,13 @@
             <p> Discord: ProDen#9328 </p>
             <a href="https://discord.gg/FPbZ64QrPJ"> My Discord server </a>
 			</div>
-          </div>
+          </div> -->
+ 
 
          
   </body>
 
+  <script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>   <script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>  <script  src="./script.js"></script>
 
   
 
